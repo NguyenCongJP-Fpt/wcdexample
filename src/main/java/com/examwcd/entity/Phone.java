@@ -1,7 +1,11 @@
 package com.examwcd.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+
+import com.googlecode.objectify.Ref;
+import com.googlecode.objectify.annotation.Entity;
+import com.googlecode.objectify.annotation.Id;
+
+import java.util.Calendar;
 
 @Entity
 public class Phone {
@@ -95,7 +99,12 @@ public class Phone {
         private long updatedAtMLS;
         private int status;
 
+//        private Ref<Category> category;
+
         private Builder() {
+            this.createdAtMLS = Calendar.getInstance().getTimeInMillis();
+            this.updatedAtMLS = Calendar.getInstance().getTimeInMillis();
+            this.status = 1;
         }
 
         public static Builder aPhone() {

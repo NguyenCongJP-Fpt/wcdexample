@@ -36,6 +36,6 @@ public class CreatePhoneController extends HttpServlet {
                 .withDescription(description)
                 .build();
         ofy().save().entity(phone).now();
-        resp.sendRedirect("/admin/phone/list");
+        resp.sendRedirect("/phone/list");
     }
 }

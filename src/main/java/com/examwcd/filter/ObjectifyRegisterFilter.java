@@ -1,5 +1,6 @@
 package com.examwcd.filter;
 
+import com.examwcd.entity.Category;
 import com.examwcd.entity.Phone;
 import com.googlecode.objectify.ObjectifyService;
 
@@ -16,6 +17,7 @@ public class ObjectifyRegisterFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         ObjectifyService.register(Phone.class);
+        ObjectifyService.register(Category.class);
         filterChain.doFilter(servletRequest, servletResponse);
     }
 

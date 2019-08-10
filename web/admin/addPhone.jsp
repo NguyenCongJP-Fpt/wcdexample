@@ -21,29 +21,49 @@
     <h2>Add Phone</h2>
     <div class="col-ml-9">
         <form action="/phone/add" method="post" class="validated">
-            <div class="form-group">
-                <label for="uname">Phone ID:</label>
-                <input type="text" class="form-control" id="uname" placeholder="Enter phone imei" name="id" required>
+            <div class="row form-group">
+                <div class="col col-md-3"><label class=" form-control-label">Phone ID:</label></div>
+                <div class="col-12 col-md-6">
+                    <input type="text" class="form-control" placeholder="Enter phone imei" name="id"
+                           required>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label for="phonename">Phone Name:</label>
-                <input type="text" class="form-control" id="phonename" placeholder="Enter phone name" name="name" required>
+            <div class="row form-group">
+                <div class="col col-md-3"><label class=" form-control-label">Phone Name:</label></div>
+                <div class="col-12 col-md-6">
+                    <input type="text" class="form-control" id="phonename" placeholder="Enter phone name" name="name"
+                           required>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label for="brand">Phone Brand:</label>
-                <input type="text" class="form-control" id="brand" placeholder="Enter brand" name="brand" required>
+            <div class="row form-group">
+                <div class="col col-md-3"><label class=" form-control-label">Phone Brand:</label></div>
+                <div class="col-12 col-md-6">
+                    <select name="brand" class="form-control">
+                        <option value="0">Please select brand</option>
+                        <option value="1">Samsung</option>
+                        <option value="2">Apple</option>
+                        <option value="3">Sony</option>
+                        <option value="3">LG</option>
+                        <option value="3">OPPO</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label for="price">Price:</label>
-                <input type="text" class="form-control" id="price" placeholder="Enter price" name="price" required>
+            <div class="row form-group">
+                <div class="col col-md-3"><label class=" form-control-label">Price:</label></div>
+                <div class="col-12 col-md-6">
+                    <input type="text" class="form-control" id="price" placeholder="Enter price" name="price" required>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label for="description">Description:</label>
-                <input type="text" class="form-control" id="description" placeholder="Enter description" name="description" required>
+            <div class="row form-group">
+                <div class="col col-md-3"><label class=" form-control-label">Description:</label></div>
+                <div class="col-12 col-md-6">
+                    <input type="text" class="form-control" id="description" placeholder="Enter description"
+                           name="description" required>
+                </div>
             </div>
 
             <div class="form-group form-check">
