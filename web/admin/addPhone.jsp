@@ -42,11 +42,11 @@
                 <div class="col-12 col-md-6">
                     <select name="brand" class="form-control">
                         <option value="0">Please select brand</option>
-                        <option value="1">Samsung</option>
-                        <option value="2">Apple</option>
-                        <option value="3">Sony</option>
-                        <option value="3">LG</option>
-                        <option value="3">OPPO</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Apple">Apple</option>
+                        <option value="Sony">Sony</option>
+                        <option value="LG">LG</option>
+                        <option value="OPPO">OPPO</option>
                     </select>
                 </div>
             </div>

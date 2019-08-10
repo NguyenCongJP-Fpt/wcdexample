@@ -17,7 +17,7 @@ public class ListPhoneController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("listPhone", ofy().load().type(Phone.class).list());
+        req.setAttribute("phones", ofy().load().type(Phone.class).list());
         req.getRequestDispatcher("/admin/listPhone.jsp").forward(req, resp);
         resp.getWriter().println("text something");
     }

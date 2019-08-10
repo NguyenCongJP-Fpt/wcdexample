@@ -18,7 +18,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>List Phone</title>
-    <meta name="description" content="Ela Admin - HTML5 Admin Template">
+    <meta name="description" content="#">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -68,15 +68,15 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <c:forEach var="phone" items="${phones}">
-                                        <td><c:out value="${phone.getId}"/></td>
+                                <c:forEach var="phone" items="${phones}">
+                                    <tr>
+                                        <td><c:out value="${phone.id}"/></td>
                                         <td>${phone.name}</td>
-                                        <td>${phone.price}</td>
                                         <td>${phone.brand}</td>
+                                        <td>${phone.price}</td>
                                         <td>${phone.description}</td>
-                                    </c:forEach>
-                                </tr>
+                                    </tr>
+                                </c:forEach>
                                 </tbody>
                             </table>
                         </div>
@@ -93,10 +93,10 @@
         <div class="footer-inner bg-white">
             <div class="row">
                 <div class="col-sm-6">
-                    Copyright &copy; 2018 Ela Admin
+                    Copyright &copy; 2019 NguyenCongJP
                 </div>
                 <div class="col-sm-6 text-right">
-                    Designed by <a href="https://colorlib.com">Colorlib</a>
+                    Designed by <a href="https://www.facebook.com/nguyencong0310">NguyenCongJP</a>
                 </div>
             </div>
         </div>
